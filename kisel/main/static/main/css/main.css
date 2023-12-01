@@ -1,0 +1,18 @@
+body{
+    background: burlywood;
+}
+
+aside{
+    float:left;
+    background: rgba(255, 0, 0, 0.18);
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: cornsilk;
+    border-right: 5px solid #080809;
+}
+
+aside img{
+    width: 80px;
+    float: left;
+}
