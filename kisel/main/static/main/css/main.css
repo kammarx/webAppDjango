@@ -1,5 +1,5 @@
 body{
-    background: burlywood;
+    background: #87deb3;
 }
 
 aside{
@@ -15,4 +15,51 @@ aside{
 aside img{
     width: 80px;
     float: left;
+}
+
+ aside .logo{
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+    position:relative;
+}
+
+aside h3{
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    color: #080809;
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease
+}
+
+aside ul li:hover,aside ul a:hover{
+    color: #ff1e00;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+ main .features {
+    float: left;
+    color: #080809;
+    text-align: center;
+    margin-top: 100px;
+    width:75%;
+}
+main .features h1{font-size: 50px}
+main .features p{max-width:400px;margin: 20px auto}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 30%;
+    text-align: left;
 }

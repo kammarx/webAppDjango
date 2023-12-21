@@ -1,8 +1,18 @@
 {% extends 'main/layout.html' %}
 
-{% block title%}Main page{% endblock %}
+{% block title%}title{% endblock %}
 
 {% block content%}
-    <h1>Main page</h1>
-    <p>Main page</p>
+    <div class="features">
+        <h1>{{title}}</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eligendi laborum nam nemo quasi recusandae suscipit voluptatum. Autem dolor dolorum iste, maiores molestias natus nulla, obcaecati quasi tempore, veniam voluptates.</p>
+        <button class="btn btn-warning">To the page "About us"</button>
+        {% for el in values%}
+            {% if el == 'Hello' %}
+                {% filter upper %}
+                    <p>{{el}}</p>
+                {% endfilter %}
+            {% endif %}
+        {% endfor %}
+    </div>
 {% endblock %}
